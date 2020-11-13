@@ -13,7 +13,7 @@ function App() {
 
   function querySeed() {
     let target = "https://a18exmb9f3.execute-api.us-east-2.amazonaws.com/prod/SFHandler/stronghold";
-    let proxy = `http://api.allorigins.win/get?url=${encodeURIComponent(target)}`;
+    let proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(target)}`;
     fetch(proxy)
       .then(res => res.json())
       .then(
